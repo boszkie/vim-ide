@@ -27,6 +27,7 @@ Plugin 'christoomey/vim-tmux-navigator'
 Plugin 'ntpeters/vim-better-whitespace'
 Plugin 'godlygeek/tabular'
 Plugin 'HTML-AutoCloseTag'
+Plugin 'Valloric/YouCompleteMe'
 
 call vundle#end()
 
@@ -47,6 +48,7 @@ set cursorline
 set backspace=indent,eol,start
 set ruler " show coordinates
 set wildmenu " enhanced cmd line completion
+set noshowmode " don't show the vim mode
 
 set incsearch " highlight search
 set hlsearch " keep highlighted
@@ -100,7 +102,7 @@ let g:syntastic_javascript_checkers = ['javascript']
 let g:syntastic_dockerfile_checkers = ['dockerfile']
 let g:syntastic_css_checkers = ['css']
 let g:syntastic_xhtml_checkers = ['xhtml']
-let g:syntastic_html_checkers = ['html']
+let g:syntastic_html_checkers = ['w3']
 let g:syntastic_sql_checkers = ['sql']
 
 " ----- xolox/vim-easytags settings -----
@@ -133,3 +135,6 @@ augroup mydelimitMate
   au FileType tex let b:delimitMate_matchpairs = "(:),[:],{:},`:'"
   au FileType python let b:delimitMate_nesting_quotes = ['"', "'"]
 augroup END
+
+" ----- YouCompletMe settings -----
+let g:ycm_server_python_interpreter = '/usr/bin/python'
