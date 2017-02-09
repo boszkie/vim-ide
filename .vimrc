@@ -28,6 +28,8 @@ Plugin 'ntpeters/vim-better-whitespace'
 Plugin 'godlygeek/tabular'
 Plugin 'HTML-AutoCloseTag'
 Plugin 'Valloric/YouCompleteMe'
+Plugin 'joonty/vdebug'
+Plugin 'scrooloose/nerdcommenter'
 
 call vundle#end()
 
