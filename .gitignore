@@ -3,6 +3,8 @@
 
 # except
 !.gitignore
+!.bashrc
+!.bash_aliases
 !.vim/
 !.vimrc
 !.fonts/
