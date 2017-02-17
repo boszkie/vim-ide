@@ -5,6 +5,6 @@
 !.gitignore
 !.bashrc
 !.bash_aliases
-!.vim/
+!.vim/colors
 !.vimrc
 !.fonts/
