@@ -104,7 +104,7 @@ if [ "$color_prompt" = yes ]; then
     CL2="\[\033[38;5;202m\]" # foreground orange
     CL3="\[\033[38;5;214m\]"  # foreground warm green
 
-    PS1="$CL1\u@\h$CL2\w$\`parse_git_branch\`$CL3:$ "
+    PS1="$CL1\u@\h$CL2\w(`parse_git_branch`)$CL3:$ "
 fi
 unset color_prompt force_color_prompt
 

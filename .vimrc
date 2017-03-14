@@ -9,27 +9,25 @@ call vundle#begin()
 
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
-Plugin 'altercation/vim-colors-solarized'
-Plugin 'tomasr/molokai'
-Plugin 'vim-airline/vim-airline'
+Plugin 'altercation/vim-colors-solarized' " I'm not sure im actually using this
+Plugin 'tomasr/molokai' "same here, this is also a colour
+Plugin 'vim-airline/vim-airline' "status bars
 Plugin 'vim-airline/vim-airline-themes'
-Plugin 'scrooloose/nerdtree'
+Plugin 'scrooloose/nerdtree' " explorer \t
 Plugin 'jistr/vim-nerdtree-tabs'
-Plugin 'vim-syntastic/syntastic'
-Plugin 'xolox/vim-misc'
-"Plugin 'xolox/vim-easytags'
-Plugin 'majutsushi/tagbar'
-Plugin 'ctrlpvim/ctrlp.vim'
-Plugin 'airblade/vim-gitgutter'
-Plugin 'tpope/vim-fugitive'
-Plugin 'Raimondi/delimitMate'
-Plugin 'christoomey/vim-tmux-navigator'
-Plugin 'ntpeters/vim-better-whitespace'
-Plugin 'godlygeek/tabular'
+Plugin 'vim-syntastic/syntastic' " code validation
+Plugin 'majutsushi/tagbar' "\b to open
+Plugin 'ctrlpvim/ctrlp.vim' " autosuggest
+Plugin 'airblade/vim-gitgutter' " side bar info
+Plugin 'tpope/vim-fugitive' " git in vim
+Plugin 'Raimondi/delimitMate' " autoclose
+Plugin 'christoomey/vim-tmux-navigator' " pane management, not sure I'm using this
+Plugin 'ntpeters/vim-better-whitespace' " shows useless space clearly
+Plugin 'godlygeek/tabular' " auto indent
 Plugin 'HTML-AutoCloseTag'
-Plugin 'Valloric/YouCompleteMe'
-Plugin 'joonty/vdebug'
-Plugin 'scrooloose/nerdcommenter'
+Plugin 'Valloric/YouCompleteMe' " auto suggest
+Plugin 'joonty/vdebug' " xdebug
+Plugin 'scrooloose/nerdcommenter' " comment/uncomment lines
 
 call vundle#end()
 
@@ -142,3 +140,4 @@ augroup END
 
 " ----- YouCompletMe settings -----
 let g:ycm_server_python_interpreter = '/usr/bin/python'
+
