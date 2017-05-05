@@ -2,6 +2,6 @@
 setup vim as an ide
 
 # use at your own risk
-This is my initial commit after manual setup. It is untested and may not be complete.
+This is my vim playground. It is only tested on my current Ubuntu installation and caters only to my needs.
 
 Based on https://github.com/jez
