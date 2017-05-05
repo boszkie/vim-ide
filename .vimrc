@@ -28,6 +28,9 @@ Plugin 'HTML-AutoCloseTag'
 Plugin 'Valloric/YouCompleteMe' " auto suggest
 Plugin 'joonty/vdebug' " xdebug
 Plugin 'scrooloose/nerdcommenter' " comment/uncomment lines
+Plugin 'tobyS/vmustache' " templateing engine used by other plugins
+Plugin 'SirVer/ultisnips' " snippets
+Plugin 'tobyS/pdv' " phpdocs
 
 call vundle#end()
 
@@ -141,3 +144,12 @@ augroup END
 " ----- YouCompletMe settings -----
 let g:ycm_server_python_interpreter = '/usr/bin/python'
 
+" ----- UltiSnips settings -----
+let g:UltiSnipsExpandTrigger="<c-z>"
+let g:UltiSnipsJumpForwardTrigger="<c-b>"
+let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+
+" ----- pvd settings -----
+let g:pdv_template_dir = $HOME . "/.vim/bundle/pdv/templates_snip"
+
+nnoremap <buffer> <c-l> :call pdv#DocumentWithSnip()<CR>
