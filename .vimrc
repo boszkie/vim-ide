@@ -9,8 +9,6 @@ call vundle#begin()
 
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
-Plugin 'altercation/vim-colors-solarized' " I'm not sure im actually using this
-Plugin 'tomasr/molokai' "same here, this is also a colour
 Plugin 'vim-airline/vim-airline' "status bars
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'scrooloose/nerdtree' " explorer \t
@@ -37,8 +35,6 @@ call vundle#end()
 filetype plugin indent on
 
 syntax on
-
-colorscheme neverland
 
 set tabstop=4
 set softtabstop=4
